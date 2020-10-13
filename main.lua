@@ -40,19 +40,13 @@ local items = {
 
 local ProductAggregator = require ("product_aggregator")
 
---[[
-ProductAgregator:new(items)
---]]
+ProductAggregator:new(items)
 
---[[
 print ("Sorted Products")
 
 local sortedProducts = ProductAggregator:getProduts()
 for k, v in ipairs(sortedProducts) do
   print (k, v.name, v.price)
 end
---]]
 
---[[
 print ("Average price", ProductAggregator:averagePrice())
---]]
